@@ -2,9 +2,8 @@ __author__ = "AlexZiroYT"
 
 import os
 
-settings_answ = ["1", "settings", "sett", "set"]
-add_answ = ["2", "add", "new"]
-del_answ = ["3", "del", "delete", "remove"]
+add_answ = ["1", "add", "new"]
+del_answ = ["2", "del", "delete", "remove"]
 
 def delete():
     print('''CAUTION!
@@ -23,42 +22,17 @@ def add():
     alias.write(original)
     start()
     
-def settings():
+def start():        
     print('''
-Welcome Interface:
-[1] Turn everything on. (greeting text and list of actions)
-[2] Only a list of actions
-[3] Turn off everything
+Hi!
+This script will help you create an alternative to the command for windows!
+You can replace the command with another text!
+For example, instead of "dir", make "ls" as on Linux.
+
+[1] Add Alias
+[2] Delete Alias
+To close: ctrl+c
 ''')
-    hiA = input(">>> ")
-    if(hiA == "1"):
-        hiSet = open("settings/hi.txt", "w")
-        hiSet.write("1")
-        hiSet.close()
-    elif(hiA == "2"):
-        hiSet = open("settings/hi.txt", "w")
-        hiSet.write("2")
-        hiSet.close()
-    elif(hiA == "3"):
-        hiSet = open("settings/hi.txt", "w")
-        hiSet.write("3")
-        hiSet.close()
-    start()
-    
-def start():
-    with open("settings/hi.txt") as file:
-        hiSettings = file.read()
-        
-        if (hiSettings == "1"):
-            with open("settings/hi/hiAll.txt") as file:
-                hi = file.read()
-        elif(hiSettings == "2"):
-            with open("settings/hi/hiOnlyActions.txt") as file:
-                hi = file.read()
-        elif(hiSettings == "3"):
-            with open("settings/hi/hiOff.txt") as file:
-                hi = file.read()          
-    print(hi)
     answer = input(">>> ")
     if(answer in settings_answ):
         settings()
