@@ -23,8 +23,7 @@ def add():
     start()
     
 def start():        
-    print('''
-Hi!
+    print('''Hi!
 This script will help you create an alternative to the command for windows!
 You can replace the command with another text!
 For example, instead of "dir", make "ls" as on Linux.
