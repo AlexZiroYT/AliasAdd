@@ -20,6 +20,6 @@ _Video:_
 
 ### When choosing an action, you can use not only the number of the action, but also the words!
 ```
-To add an alias: 2, add, new
-To delete an alias: 3, del, delete, remove
+To add an alias: 1, add, new
+To delete an alias: 2, del, delete, remove
 ```
