@@ -20,7 +20,6 @@ _Video:_
 
 ### When choosing an action, you can use not only the number of the action, but also the words!
 ```
-For settings: 1, settings, sett, set
 To add an alias: 2, add, new
 To delete an alias: 3, del, delete, remove
 ```
