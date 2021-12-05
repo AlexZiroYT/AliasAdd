@@ -1,9 +1,0 @@
-Hi!
-This script will help you create an alternative to the command for windows!
-You can replace the command with another text!
-For example, instead of "dir", make "ls" as on Linux.
-
-[1] Interface
-[2] Add Alias
-[3] Delete Alias
-To close: ctrl+c
